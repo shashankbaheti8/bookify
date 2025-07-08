@@ -7,7 +7,7 @@ Thanks! Based on your earlier feature list and preferences, here's a **detailed,
 A full-stack, role-based room booking platform built with **Next.js**, **React**, and **Appwrite**, offering real-time availability, user authentication, and image uploads. Designed to simplify room management and streamline the booking experience for users and admins.
 
 🔗 **Live App:**
-➡️ [https://your-app.vercel.app](https://your-app.vercel.app) *(replace with actual URL)*
+➡️ [https://bookify-ruddy.vercel.app/](https://bookify-ruddy.vercel.app/)
 
 ---
 
@@ -31,6 +31,12 @@ A full-stack, role-based room booking platform built with **Next.js**, **React**
 | Next.js + React | Appwrite           | Vercel            |
 | Tailwind CSS    | Appwrite Functions | Appwrite (Cloud)  |
 | React Toastify  | JWT Auth           | GitHub            |
+
+---
+
+## 🖼 Demo
+
+![Image](https://github.com/shashankbaheti8/bookify/blob/main/public/Image.png)
 
 ---
 
@@ -95,10 +101,14 @@ cd room-booking-app
 2. Add your `.env` with:
 
 ```env
-NEXT_PUBLIC_APPWRITE_ENDPOINT=...
-NEXT_PUBLIC_APPWRITE_PROJECT_ID=...
-NEXT_PUBLIC_APPWRITE_DATABASE_ID=...
-NEXT_PUBLIC_APPWRITE_COLLECTION_ID=...
+NEXT_APPWRITE_KEY
+NEXT_PUBLIC_APPWRITE_ENDPOINT
+NEXT_PUBLIC_APPWRITE_PROJECT
+NEXT_PUBLIC_APPWRITE_DATABASE
+NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS
+NEXT_PUBLIC_APPWRITE_COLLECTION_BOOKINGS
+NEXT_PUBLIC_APPWRITE_ROOMS_STORAGE_BUCKET
+NEXT_PUBLIC_URL
 ```
 
 3. Install and run:
