@@ -1,8 +1,6 @@
 import { NextResponse } from 'next/server';
-import checkAuth from './app/actions/checkAuth';
-
 export async function middleware(request) {
-  const { isAuthenticated } = await checkAuth();
+  const isAuthenticated = request.cookies.has('appwrite-session');
 
   if (!isAuthenticated) {
     return NextResponse.redirect(new URL('/login', request.url));
